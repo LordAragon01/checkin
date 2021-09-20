@@ -5,9 +5,9 @@ namespace Source\Database;
 class Connect {
 
 	const HOSTNAME = "localhost";
-	const USERNAME = "Admin";
-	const PASSWORD = "Flamengo2511";
-	const DBNAME = "gestao_compras";
+	const USERNAME = "yourusername";
+	const PASSWORD = "yourpassword";
+	const DBNAME = "yourdbname";
 
 	private $conn;
 
