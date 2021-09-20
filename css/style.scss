@@ -1,0 +1,110 @@
+*{
+	
+	margin:0;padding:0;outline:none;font-size:100%;border:none; box-sizing:border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+@font-face{
+    font-family:"Kalvika";
+    src: url("../fonts/KlavikaBoldBold.otf");
+    font-weight:bold;
+}
+
+@font-face{
+    font-family:"BebasNeue";
+    src: url("../fonts/BebasNeue.otf");
+    font-weight:bold;
+}
+
+/*===Globais===*/
+
+ul{list-style-type:none;}
+ul li{background:none !important;border:none !important;}
+
+$gray: #999;
+$white: #fff;
+
+
+
+.title{
+    font-family:"BebasNeue";
+    color:$gray;
+    font-size:1.5rem;
+    
+}
+
+.listtitleconf{
+    display:none;
+    text-align:center;
+    color:$white;
+}
+
+.activetitle{
+    display:flex;
+    color:$white !important;
+}
+
+.list div{
+    flex-wrap:wrap;
+}
+
+.content{
+    display:none;
+}
+
+.loadgif{
+    display:none;
+}
+
+.rowprice{
+    display:none;
+}
+
+.update, .delete{
+    cursor:pointer;
+}
+
+.deactivetd{
+    display:none !important;
+    transition:all .5s ease-out;
+}
+
+.activetd{
+    display:block !important;
+    transition:all .5s ease-in;
+}
+
+
+.check p{
+    padding: 10px;
+    cursor: pointer;
+    margin: 0;
+    color: #777;
+}
+
+.check p:hover{
+    color: #000;
+}
+
+.check p b{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+    opacity: 0.5;
+    padding: 2px 7px;
+    background-color: #069;
+    color: #fff;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+.activecheck{
+    background-color: #72b193 !important;
+    transition:all .5s ease-in-out;
+}
+
+.activecheckdanger{
+    background-color:#AA292F !important;
+    transition:all .5s ease-in-out;
+}

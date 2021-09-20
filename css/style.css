@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-size: 100%;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+@font-face {
+  font-family: "Kalvika";
+  src: url("../fonts/KlavikaBoldBold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue.otf");
+  font-weight: bold;
+}
+
+/*===Globais===*/
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  background: none !important;
+  border: none !important;
+}
+
+.title {
+  font-family: "BebasNeue";
+  color: #999;
+  font-size: 1.5rem;
+}
+
+.listtitleconf {
+  display: none;
+  text-align: center;
+  color: #fff;
+}
+
+.activetitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff !important;
+}
+
+.list div {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content {
+  display: none;
+}
+
+.loadgif {
+  display: none;
+}
+
+.rowprice {
+  display: none;
+}
+
+.update, .delete {
+  cursor: pointer;
+}
+
+.deactivetd {
+  display: none !important;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.activetd {
+  display: block !important;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.check p {
+  padding: 10px;
+  cursor: pointer;
+  margin: 0;
+  color: #777;
+}
+
+.check p:hover {
+  color: #000;
+}
+
+.check p b {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px;
+  opacity: 0.5;
+  padding: 2px 7px;
+  background-color: #069;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: bold;
+  border-radius: 10%;
+}
+
+.activecheck {
+  background-color: #72b193 !important;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.activecheckdanger {
+  background-color: #AA292F !important;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */

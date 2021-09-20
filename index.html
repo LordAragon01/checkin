@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Compras</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Gestão</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link itemload" href="firstpage">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link itemload" href="secondpage">Lista de Compras</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link itemload" href="thirdpage">Todas as Listas</a>
+                </li> -->
+               <!--  <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+              </ul>
+            </div>
+          </nav>
+
+    </header>
+
+        <!--First Page--> 
+      <section class="firstpage container my-5" aria-describedby="Form for List" id="firstpage">
+          <div class="row">
+
+            <h6 class="flex-row justify-content-center title listtitleconf btn-success p-2 col-12"></h6>
+
+              <div class="col-12">
+  
+                  <form action="" method="post" class="formlist" enctype="multipart/form-data" aria-describedby="Shopping list" autocomplete="off">
+  
+                      <fieldset>
+  
+                          <legend class="d-flex flex-row justify-content-center title">Lista de Compras</legend>
+  
+                      <div class="form-group">
+                        <label for="mercearia">Mercearia</label>
+                        <input type="text" class="form-control mercearia" name="mercearia" id="mercearia" aria-label="Inform your Product" placeholder="Informe Produtos da Mercearia">
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="fresco">Fresco</label>
+                          <input type="text" class="form-control fresco" name="fresco" id="fresco" aria-label="Inform your Product" placeholder="Informe Produtos Fresco">
+                      </div>
+    
+                      <div class="form-group">
+                          <label for="talho">Talho</label>
+                          <input type="text" class="form-control talho" name="talho" id="talho" aria-label="Inform your Product" placeholder="Informe Produtos de Talho">
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="congelados">Congelados</label>
+                          <input type="text" class="form-control congelados" name="congelados" id="congelados" aria-label="Inform your Product" placeholder="Informe Produtos Congelados">
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="limpeza">Limpeza</label>
+                          <input type="text" class="form-control limpeza" name="limpeza" id="limpeza" aria-label="Inform your Product" placeholder="Informe Produtos de Limpeza">
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="charcutaria">Charcutaria</label>
+                          <input type="text" class="form-control charcutaria" name="charcutaria" id="charcutaria" aria-label="Inform your Product" placeholder="Informe Produtos de Charcutaria">
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="guloseimas">Guloseimas</label>
+                          <input type="text" class="form-control guloseimas" name="guloseimas" id="guloseimas" aria-label="Inform your Product" placeholder="Informe Produtos de Guloseima">
+                      </div>
+  
+                      <div class="form-group">
+                        <label for="bebidas">Bebidas</label>
+                        <input type="text" class="form-control bebidas" name="bebidas" id="bebidas" aria-label="Inform your Product" placeholder="Informe Produtos de Bebidas">
+                      </div>
+  
+                      </fieldset>
+                
+                      <button type="submit" class="btn btn-primary formsubmit" aria-labelledby="Send List" disabled >Guardar</button>
+                  </form>
+  
+              </div>
+          </div>
+  
+      </section>
+
+    <section class="container content my-5">
+          <div class="row">
+
+              <img src="images/load.gif" class="img-fluid loadgif" alt="Carregando" title="Carregando"/>
+            
+
+          </div>
+    </section>
+
+
+
+    <div style="clear:both;"></div>  
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    <script src="js/jquery.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/section.js"></script>       
+</body>
+</html>
