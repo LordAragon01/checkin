@@ -77,13 +77,15 @@ class Product extends Model{
 	
 	}
 	
-	public function delete(){
+	public function delete($id){
 		
 		
 		$Connect = new Connect();
-		$results = $Connect->query("DELETE FROM tb_products WHERE idproducts = :idproducts", [
-			":idproducts"=>$this->getidproducts()
+		$results = $Connect->query("DELETE FROM list WHERE list_id = :list_id", [
+			":list_id"=>$id
 		]);	
+
+		return $results;
 		
 	}
 	

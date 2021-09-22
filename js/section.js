@@ -134,10 +134,17 @@ $(function(){
 
             }else{
 
+               var confirmcheck = confirm('Retirar o Checking ?');
+
+               if(confirmcheck === true){
+
                 checking.removeClass('activecheck');
                 checking.css('background', '#069');
 
-                return confirm('Retirar o Checking ?');
+               }
+
+                 return;
+
 
             }
 
@@ -209,16 +216,16 @@ $(function(){
 
         if(!price){
 
-            console.log('Favor Informar o Preço');
+            alert('Favor Informar o Preço');
 
 
         }else if(validation === false || price.length > 6){
 
-            console.log('Favor Informar apenas Números e até 6 caracteres para o Preço');
+            alert('Favor Informar apenas Números e até 6 caracteres para o Preço');
 
         }else{
 
-            console.log('Enviado com Sucesso');
+            alert('Preço Atualizado com Sucesso');
 
             $.post(urlupdate, {price: price, idproduct: idproduct}, function(response){
 
@@ -227,16 +234,15 @@ $(function(){
 
             }, "json");
 
+            setTimeout(function(){
+
+                var page = 'secondpage';
+    
+                hrefResponse(page);
+        
+            }, 1000);
        
         }
-        
-        setTimeout(function(){
-
-            var page = 'secondpage';
-
-            hrefResponse(page);
-    
-        }, 1000);
         
 
     });//end
@@ -245,16 +251,52 @@ $(function(){
 
         if(response.success){
 
-            alert('Enviado com Sucesso');
+            console.log('Enviado com Sucesso');
+            
 
         }else{
 
-            alert('Falha ao Enviar');
+            console.log('Falha ao Enviar');
 
 
         }
 
 
     }
+
+    //Delete Product
+    $('body').on('click', '.delete', function(e){
+
+        e.preventDefault();
+
+        var url = window.location.href;  
+        let urldelete = url + "send/delete.php";
+
+        var infoid = $(this);
+        var idproduct = infoid.attr('href');
+
+        var confirmdelete = confirm('Confirma a Exclusão ?');
+
+        if(confirmdelete === true){
+
+            $.get(urldelete, {idproduct: idproduct}, function(response){
+
+                responseFormprice(response);
+    
+            }, "json"); 
+    
+            setTimeout(function(){
+    
+                var page = 'secondpage';
+    
+                hrefResponse(page);
+        
+            }, 1200);
+
+        }
+
+        return;
+
+    });//end
 
 });

@@ -18,6 +18,12 @@
 
 /*===Globais===*/
 
+::placeholder{
+    font-size:.8rem;
+    color:#ddd;
+    font-style:italic;
+}
+
 ul{list-style-type:none;}
 ul li{background:none !important;border:none !important;}
 
@@ -107,4 +113,90 @@ $white: #fff;
 .activecheckdanger{
     background-color:#AA292F !important;
     transition:all .5s ease-in-out;
+}
+
+.labelmercearia, .labelfresco, .labeltalho, .labelcongelados, .labellimpeza, .labelcharcutaria, .labelguloseimas, .labelbebidas{
+    font-weight:bold;
+}
+
+.labelmercearia{
+    color:#F5CBA7;
+}
+
+.labelfresco{
+    color:#A3E4D7;
+}
+
+.labeltalho{
+    color:#F5B7B1;
+}
+
+.labelcongelados{
+    color:#AED6F1;
+}
+
+.labellimpeza{
+    color:#D7BDE2;
+}
+
+.labelcharcutaria{
+    color:#EDBB99;
+}
+
+.labelguloseimas{
+    color:#F9E79F;
+}
+
+.labelbebidas{
+    color:#A9CCE3;
+}
+
+
+/*====Categorys Style===*/
+
+.table tbody tr td{
+    color:#666;
+}
+
+.hovertable tr:hover{
+    background-color: #eaf2f8;
+    cursor:pointer;
+
+    td{
+
+        color:#333;
+
+    }
+}
+
+.mercearia{
+    background-color:#fae5d3;
+}
+
+.fresco{
+    background-color:#d1f2eb;
+}
+
+.talho{
+    background-color:#fadbd8;
+}
+
+.congelados{
+    background-color:#d6eaf8;
+}
+
+.limpeza{
+    background-color:#f5eef8;
+}
+
+.charcutaria{
+    background-color:#fdf2e9;
+}
+
+.guloseimas{
+    background-color:#fcf3cf;
+}
+
+.bebidas{
+    background-color:#d4e6f1;
 }

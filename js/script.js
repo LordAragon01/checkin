@@ -65,7 +65,7 @@ $(function(){
 
         if(response.success){
 
-            console.log("Enviado com Success");
+            //console.log("Enviado com Success");
 
             inputs.val('');
 
@@ -76,7 +76,16 @@ $(function(){
                 title.removeClass('btn-danger');
                 title.addClass('btn-success');
                 title.text("Formulário Enviado com Sucesso");
+
+                title.fadeIn(1400);
+                title.delay(400).fadeOut(1400);
+
+                return;
             }
+
+            title.removeClass('btn-danger');
+            title.addClass('btn-success');
+            title.text("Formulário Enviado com Sucesso");
 
             title.fadeIn(1400);
             title.delay(400).fadeOut(1400);
